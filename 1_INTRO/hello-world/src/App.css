@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.App p {
+  color: rgb(255, 3, 3);
+  background-color: #282c34;
+  padding: 15px;
+  font-size: 32px;
+}
