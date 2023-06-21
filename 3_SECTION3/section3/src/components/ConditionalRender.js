@@ -5,7 +5,9 @@ const ConditionalRender = () => {
 
     const [name, setName] = useState("Cleidson");
 
-    const [vel, setVel] = useState(101)
+    const [vel, setVel] = useState(101);
+
+    const [salary, setSalary] = useState(4500);
 
   return (
     <div>
@@ -37,7 +39,16 @@ const ConditionalRender = () => {
             </div>
         )}
         <button onClick={() => setVel(90)}>Clique e saiba se foi multado</button>
-        
+        {salary >= 4500 ? (
+            <div>
+                <p>Eu quero esse emprego!</p>
+            </div>
+        ) : (
+            <div>
+                <p>O salário de {salary}, é muito baixo para o que eu sei.</p>
+            </div>
+        )}
+        <button onClick={() => setSalary(3500)}>Buscar salário</button>
     </div>
   )
 }
