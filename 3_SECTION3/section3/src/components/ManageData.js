@@ -7,10 +7,10 @@ const ManageData = () => {
 
     const [number, setNumber] = useState(15);
 
-    console.log(number)
+    console.log(number);
 
     const [nome, setNome] = useState("Cleidson");
-    console.log(nome)
+    console.log(nome);
 
   return (
     <div>
