@@ -3,6 +3,7 @@ const CarDetails = ({ brand, km, color, newCar }) => {
     <div>
         <h2>Detalhes do carro</h2>
         <ul>
+            <li>key={CarDetails.id}</li>
             <li>Marca: {brand}</li>
             <li>KM: {km}</li>
             <li>Cor: {color}</li>
@@ -10,6 +11,6 @@ const CarDetails = ({ brand, km, color, newCar }) => {
         </ul>
         {newCar && <p>Este carro é novo!</p>}
     </div>
-)}
+)};
 
 export default CarDetails;
