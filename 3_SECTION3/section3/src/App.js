@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import './App.css';
+
 import City from './assets/city.jpg'
 import ConditionalRender from './components/ConditionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
+import Fragment from './components/Fragment';
 
 function App() {
   const userName = useState(" Cleidson Ramos ");
@@ -14,7 +16,7 @@ function App() {
     { id: 1, brand: "Ferrari", color: "Vermelha", km: 0, newCar: true },
     { id: 2, brand: "KIA", color: "Verde", km: 15000, newCar: false },
     { id: 3, brand: "Honda", color: "Prata", km: 0, newCar: true } 
-  ]
+  ];
 
   return (
     <div className="App">
@@ -27,7 +29,6 @@ function App() {
         <div>
           <img src={City} alt="Cidade" />
         </div>
-        <div>
           <ManageData />
           <ListRender />
           <ConditionalRender />
@@ -44,14 +45,10 @@ function App() {
 
           {/* loop em array de objetos */}
           {cars.map((car) => (
-            <CarDetails
-            brand={car.brand}
-            color={car.color}
-            km={car.km}
-            newCar={car.newCar}
-            />
+          <CarDetails brand={car.brand} color={car.color} km={car.km} newCar={car.newCar} />
           ))}
-        </div>
+        {/* Fragment */}
+        <Fragment propFragment="Teste" />
     </div>
   );
 }
