@@ -8,6 +8,11 @@ import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
 import Fragment from './components/Fragment';
+import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
+import Messege from './components/Messege';
+import ChangeMessageState from './components/ChangeMessageState';
+import UserDetails from './components/UserDetails';
 
 function App() {
   const userName = useState(" Cleidson Ramos ");
@@ -16,6 +21,23 @@ function App() {
     { id: 1, brand: "Ferrari", color: "Vermelha", km: 0, newCar: true },
     { id: 2, brand: "KIA", color: "Verde", km: 15000, newCar: false },
     { id: 3, brand: "Honda", color: "Prata", km: 0, newCar: true } 
+  ];
+
+  function showMessage() {
+    console.log("Evento do componente pai")
+  };
+
+  const [message, setMessage] = useState("");
+
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  };
+
+  const users = [
+    {id: 1, name: "Cleidson", job: "Programador", age: 25},
+    {id: 2, name: "Milena", job: "Empresária", age: 25},
+    {id: 3, name: "Claise", job: "Advogada", age: 27},
+    {id: 4, name: "Noah", job: "Estudante", age: 2}
   ];
 
   return (
@@ -34,7 +56,7 @@ function App() {
           <ConditionalRender />
 
           {/* props */}
-          <ShowUserName name={userName} />
+          <ShowUserName nome={userName} />
 
           {/* destucturing */}
           <CarDetails brand="VW" km={70000} color="Vermelho" />
@@ -45,10 +67,36 @@ function App() {
 
           {/* loop em array de objetos */}
           {cars.map((car) => (
-          <CarDetails brand={car.brand} color={car.color} km={car.km} newCar={car.newCar} />
+          <CarDetails 
+            key={car.id}
+            brand={car.brand} 
+            color={car.color} 
+            km={car.km} 
+            newCar={car.newCar} />
           ))}
         {/* Fragment */}
         <Fragment propFragment="Teste" />
+        {/* children */}
+        <Container myValue="Testing">
+            <p>Este é o conteúdo container</p>
+        </Container>
+        <Container myValue="Testing 2">
+            <p>Conteúdo 2</p>
+        </Container>
+        {/* Executar uma função */}
+        <ExecuteFunction myFunction={showMessage} />
+        {/* state lift */}
+        <Messege  msg={message}/>
+        <ChangeMessageState handleMessage={handleMessage} />
+        {/* Tarefa */}
+        {users.map((user) => (
+          <UserDetails
+          key={user.id}
+          name={user.name}
+          job={user.job}
+          age={user.age}
+          />
+        ))};
     </div>
   );
 }
