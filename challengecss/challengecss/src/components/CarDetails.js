@@ -1,12 +1,13 @@
-import React from 'react'
+import styles from "./CarDetails.module.css"
 
-const CarDetails = () => {
+const CarDetails = ({ car }) => {
 
   return (
     <div>
-        <div>
-            <h2>Ford</h2>
-            <p>Co</p>
+        <div className={styles.card}>
+            <h2>{ car.name }</h2>
+            <p>KM: { car.km }</p>
+            <p>Cor { car.color }</p>
         </div>
     </div>
   )
