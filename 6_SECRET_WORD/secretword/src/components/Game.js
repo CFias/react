@@ -6,7 +6,7 @@ const Game = ({ verifyLetter }) => {
       <h1>Game</h1>
       <button onClick={ verifyLetter }>Finalizar o jogo</button>
     </div>
-  )
-}
+  );
+};
 
-export default Game
+export default Game;
