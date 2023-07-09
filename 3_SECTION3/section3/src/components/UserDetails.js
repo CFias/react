@@ -13,4 +13,4 @@ const UserDetails = ({name, age, job}) => {
   )
 }
 
-export default UserDetails
+export default UserDetails;
