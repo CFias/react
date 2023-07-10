@@ -8,14 +8,17 @@ function App() {
   const [products, setProducts] = useState([]);
 
   // 1 - resgatando dados
-  useEffect(async () => {
+  useEffect(() => {
+    async function fetchData() {
 
-    const res = await fetch(url)
+      const res = await fetch(url);
+       
+      const data = await res.json();
 
-    const data = await res.json()
+      setProducts(data);
+    }
 
-    setProducts(data)
-
+    fetchData();
   }, []);
 
   console.log(products);
