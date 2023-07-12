@@ -16,10 +16,12 @@ function App() {
       const data = await res.json();
 
       setProducts(data);
-    }
+    };
 
     fetchData();
   }, []);
+
+  
 
   return (
     <div className="App">
