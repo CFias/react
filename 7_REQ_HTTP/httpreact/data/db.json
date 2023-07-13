@@ -19,6 +19,11 @@
       "name": "CFias",
       "price": "25",
       "id": 4
+    },
+    {
+      "name": "Monitor",
+      "price": "600",
+      "id": 5
     }
   ]
 }
