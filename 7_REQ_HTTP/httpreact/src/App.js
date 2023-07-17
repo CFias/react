@@ -10,7 +10,7 @@ const url = "http://localhost:3000/products";
 function App() {
   const [products, setProducts] = useState([]);
 
-  // 4 - custom
+  // 4 - custom data
   const { data: items } = useFetch(url);
 
   const [name, setName] = useState("");
