@@ -1,7 +1,6 @@
 import './App.css';
 import CarDetails from './components/CarDetails';
 
-
 function App() {
   const myCars = [ 
     { id: 1, name: "Elantra", km: 10000, color: "Branca" },
