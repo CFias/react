@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
       <p>Desafio One</p>
     </div>
   );
-}
-
+};
 
 export default App;
