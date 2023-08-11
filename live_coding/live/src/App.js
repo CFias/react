@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1>Olá Mundo!</h1>
+      <h1>Olá Mundo!!</h1>
     </>
   );
 }
