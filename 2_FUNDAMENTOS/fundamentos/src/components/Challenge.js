@@ -5,8 +5,8 @@ const Challenge = () => {
 
     return (
         <div>
-            <p>A: {a}</p>
-            <p>B: {b}</p>
+            <p>A:{a}</p>
+            <p>B:{b}</p>
             <button onClick={() => console.log(a + b)}>Clique e veja a soma!</button>
         </div>
     )
