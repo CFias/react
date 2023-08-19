@@ -9,8 +9,7 @@ const Challenge = () => {
             <p>B: {b}</p>
             <button onClick={() => console.log(a + b)}>Clique e veja a soma!</button>
         </div>
-    )
-
-}
+    );
+};
 
 export default Challenge;
