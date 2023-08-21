@@ -35,7 +35,7 @@ const Events = () => {
             {RenderSomething(true)}
             {RenderSomething(false)}
         </div>
-    )
+    );
 };
 
 export default Events;
