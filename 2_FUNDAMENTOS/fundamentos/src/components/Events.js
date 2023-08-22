@@ -8,9 +8,9 @@ const Events = () => {
 
     const RenderSomething = (x) => {
         if(x) {
-            return <h1>Isso foi verdadeiro</h1>;
+            return <h1>Isso foi verdadeiro</h1>
         } else {
-            return <h1>Isso não passsou pelo IF</h1>;
+            return <h1>Isso não passsou pelo IF</h1>
         }
     };
 
