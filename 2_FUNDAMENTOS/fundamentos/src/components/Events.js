@@ -4,7 +4,7 @@ const Events = () => {
 
         console.log(e);
         console.log("Clicou em mim!");
-    }
+    };
 
     const RenderSomething = (x) => {
         if(x) {
