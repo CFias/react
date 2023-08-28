@@ -10,8 +10,7 @@ const CarDetails = ({ car }) => {
             <p>Cor { car.color }</p>
         </div>
     </div>
-  )
-
-}
+  );
+};
 
 export default CarDetails
