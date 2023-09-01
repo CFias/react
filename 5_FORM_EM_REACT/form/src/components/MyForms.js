@@ -81,4 +81,4 @@ const MyForms = ({ user }) => {
   )
 }
 
-export default MyForms
+export default MyForms;
