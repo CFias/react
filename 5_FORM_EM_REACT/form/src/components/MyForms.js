@@ -78,7 +78,7 @@ const MyForms = ({ user }) => {
         <input type="submit" value="enviar" />
       </form>
     </div>
-  )
+  );
 }
 
 export default MyForms;
