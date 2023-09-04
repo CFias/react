@@ -79,6 +79,7 @@ const MyForms = ({ user }) => {
       </form>
     </div>
   );
-}
+};
+
 
 export default MyForms;
