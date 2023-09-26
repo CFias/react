@@ -2,28 +2,18 @@
   "products": [
     {
       "id": 1,
-      "name": "Camisa",
-      "price": 59.9
+      "name": "WebCam",
+      "price": 60.99
     },
     {
       "id": 2,
-      "name": "Calça vermelha",
-      "price": 90
+      "name": "Gabinete",
+      "price": 609.99
     },
     {
       "id": 3,
-      "name": "Boné aba reta",
-      "price": 29.9
-    },
-    {
-      "name": "CFias",
-      "price": "25",
-      "id": 4
-    },
-    {
-      "name": "Monitor",
-      "price": "600",
-      "id": 5
+      "name": "Processador",
+      "price": 600.99
     }
   ]
 }
