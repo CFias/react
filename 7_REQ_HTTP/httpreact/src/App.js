@@ -82,6 +82,7 @@ function App() {
               />
             Preço:
             <input 
+              className='test'
               type="number" 
               value={price} 
               name='price' 
