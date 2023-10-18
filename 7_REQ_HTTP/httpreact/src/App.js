@@ -80,7 +80,6 @@ function App() {
               name='name' 
               onChange={(e) => setName(e.target.value)}
               />
-            Preço:
             <input 
               type="number" 
               value={price} 
