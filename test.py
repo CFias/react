@@ -1,6 +1,5 @@
 import random
 
-
 def choice_player():
     choice_p = input("Escolja Pedra, Papel ou Tesoura: ").lower()
     if choice_p in ['Pedra', 'Papel', 'Tesoura']:
@@ -9,11 +8,9 @@ def choice_player():
         print("Escolha inválida. Tente novamente!")
         return choice_player()
 
-
 def choice_computer():
     choice_c = ['Pedra', 'Papel', 'Tesoura']
     return random.choice(choice_c)
-
 
 def player_win(player, computer):
     if player == computer:
@@ -22,7 +19,6 @@ def player_win(player, computer):
         return 'Você venceu!'
     else:
         return "A máquina venceu!"
-
 
 def game():
     while True:
