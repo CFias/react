@@ -30,3 +30,5 @@ def game():
 
         result = player_win(player, computer)
         print(result)
+
+game()
