@@ -12,7 +12,6 @@ def choice_computer():
     choice_c = ['Pedra', 'Papel', 'Tesoura']
     return random.choice(choice_c)
 
-
 def player_win(player, computer):
     if player == computer:
         return "Empate!"
