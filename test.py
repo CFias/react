@@ -1,5 +1,6 @@
 import random
 
+
 def choice_player():
     choice_p = input("Escolja Pedra, Papel ou Tesoura:").lower()
     if choice_p in ['Pedra', 'Papel', 'Tesoura']:
