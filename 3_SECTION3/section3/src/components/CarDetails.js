@@ -9,7 +9,7 @@ const CarDetails = ({ brand, km, color, newCar }) => {
             <li>Cor: {color}</li>
             <li>Novo: {newCar}</li>
         </ul>
-        {newCar && <p>carro novo!</p>}
+        {newCar  && <p>carro novo!</p>}
     </div>
 )};
 
