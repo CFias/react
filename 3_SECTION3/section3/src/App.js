@@ -35,8 +35,7 @@ function App() {
 
   const users = [
     {id: 1, name: "Cleidson", job: "Programador", age: 25},
-    {id: 2, name: "Milena", job: "Empresária", age: 25},
-    {id: 3, name: "Claise", job: "Advogada", age: 27}
+    {id: 2, name: "Milena", job: "Empresária", age: 25}
   ];
 
   return (
