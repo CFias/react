@@ -18,6 +18,7 @@ function App() {
   const userName = useState("Cleidson");
 
   const cars = [
+    { id: 1, brand: "Ferrari", color: "Vermelha", km: 0, newCar: true },
     { id: 1, brand: "Ferrari", color: "Vermelha", km: 0, newCar: true }
   ];
 
