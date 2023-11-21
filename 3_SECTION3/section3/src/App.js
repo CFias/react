@@ -19,7 +19,7 @@ function App() {
 
   const cars = [
     { id: 1, brand: "Ferrari", color: "Vermelha", km: 0, newCar: true },
-    { id: 2, brand: "Ferrari", color: "Vermelha", km: 0, newCar: false }
+    { id: 2, brand: "Ferrari", color: "Vermelha", km: 100, newCar: false }
   ];
 
   function showMessage() {
