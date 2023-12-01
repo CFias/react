@@ -55,7 +55,7 @@ function App() {
           <ShowUserName nome={userName} />
 
           {/* destucturing */}
-          <CarDetails brand="VW" km={70000} color="Vermelho" />
+          <CarDetails brand="Chevrolet" km={70000} color="Vermelho" />
 
           {/* reaproveitando */}
           <CarDetails brand="Ford" km={0} color="Cinza" newCar={true} />
