@@ -81,7 +81,7 @@ function App() {
         </Container>
         {/* Executar uma função */}
         <ExecuteFunction myFunction={showMessage} />
-        {/*state lift*/}
+        {/* state lift */}
         <Messege  msg={message}/>
         <ChangeMessageState handleMessage={handleMessage} />
         {/* Tarefa */}
