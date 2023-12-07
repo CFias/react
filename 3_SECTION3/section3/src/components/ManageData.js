@@ -27,7 +27,7 @@ const ManageData = () => {
             <button onClick={() => setNome("Cleidson Fias")}>Adicionar sobre nome</button>
         </div>
     </div>
-  )
-}
+  );
+};
 
 export default ManageData;
