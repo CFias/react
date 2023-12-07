@@ -17,7 +17,7 @@ const ListRender = () => {
             console.log(prevUsers);
             return prevUsers.filter((user) => randomNumber !== user.id);
         })
-    }
+    };
 
   return (
     <div>
@@ -35,7 +35,7 @@ const ListRender = () => {
         </ul>
         <button onClick={deleteRandom}>Delete random user</button>
     </div>
-  )
-}
+  );
+};
 
-export default ListRender
+export default ListRender;
